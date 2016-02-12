@@ -1,0 +1,23 @@
+{
+  "name": "dezsys10-loadbalancing",
+  "version": "1.0.0",
+  "description": "Load Balancing",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReneHollander/dezsys10-loadbalancing.git"
+  },
+  "author": "Christoph Hackenberger, Rene Hollander",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ReneHollander/dezsys10-loadbalancing/issues"
+  },
+  "homepage": "https://github.com/ReneHollander/dezsys10-loadbalancing#readme",
+  "dependencies": {
+    "koa": "^1.1.2",
+    "socket.io": "^1.4.5",
+    "socket.io-client": "^1.4.5"
+  }
+}
