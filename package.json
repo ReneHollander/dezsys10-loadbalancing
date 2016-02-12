@@ -17,6 +17,7 @@
   "homepage": "https://github.com/ReneHollander/dezsys10-loadbalancing#readme",
   "dependencies": {
     "koa": "^1.1.2",
+    "minimist": "^1.2.0",
     "socket.io": "^1.4.5",
     "socket.io-client": "^1.4.5"
   }
