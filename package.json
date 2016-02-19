@@ -17,6 +17,7 @@
   "gypfile": true,
   "homepage": "https://github.com/ReneHollander/dezsys10-loadbalancing#readme",
   "dependencies": {
+    "bindings": "^1.2.1",
     "koa": "^1.1.2",
     "koa-router": "^5.4.0",
     "minimist": "^1.2.0",
