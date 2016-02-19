@@ -14,11 +14,13 @@
   "bugs": {
     "url": "https://github.com/ReneHollander/dezsys10-loadbalancing/issues"
   },
+  "gypfile": true,
   "homepage": "https://github.com/ReneHollander/dezsys10-loadbalancing#readme",
   "dependencies": {
     "koa": "^1.1.2",
     "koa-router": "^5.4.0",
     "minimist": "^1.2.0",
+    "nan": "^2.2.0",
     "socket.io": "^1.4.5",
     "socket.io-client": "^1.4.5"
   }

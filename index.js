@@ -6,9 +6,11 @@ const Router = require('koa-router');
 
 const LoadBalancer = require('./lib/loadbalancer');
 const RoundRobin = require('./lib/strategies/roundrobin');
+const ServerProbes = require('./lib/strategies/serverprobes');
 const Service = require('./lib/service');
 
-let loadBalancer = new LoadBalancer(5001, new RoundRobin());
+//let loadBalancer = new LoadBalancer(5001, new RoundRobin());
+let loadBalancer = new LoadBalancer(5001, new ServerProbes());
 new Service('http://localhost:5001', 'service1');
 new Service('http://localhost:5001', 'service2');
 
