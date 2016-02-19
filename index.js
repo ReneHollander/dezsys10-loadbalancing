@@ -8,11 +8,13 @@ const LoadBalancer = require('./lib/loadbalancer');
 const RoundRobin = require('./lib/strategies/roundrobin');
 const ServerProbes = require('./lib/strategies/serverprobes');
 const Service = require('./lib/service');
+const LeastConnections = require('./lib/strategies/lconnections');
+const WeightedDistribution = require('./lib/strategies/wdistrib');
 
-//let loadBalancer = new LoadBalancer(5001, new RoundRobin());
-let loadBalancer = new LoadBalancer(5001, new ServerProbes());
-new Service('http://localhost:5001', 'service1');
-new Service('http://localhost:5001', 'service2');
+let loadBalancer = new LoadBalancer(5001, new WeightedDistribution());
+new Service('http://localhost:5001', 'service1', 2);
+new Service('http://localhost:5001', 'service2', 3);
+new Service('http://localhost:5001', 'service3', 1);
 
 let koa = new Koa();
 let router = new Router();
