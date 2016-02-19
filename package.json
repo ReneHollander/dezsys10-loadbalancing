@@ -24,5 +24,9 @@
     "nan": "^2.2.0",
     "socket.io": "^1.4.5",
     "socket.io-client": "^1.4.5"
+  },
+  "scripts": {
+    "preinstall": "./build-deps.sh",
+    "install": "node-gyp rebuild"
   }
 }
