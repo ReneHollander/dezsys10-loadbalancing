@@ -20,7 +20,12 @@ let koa = new Koa();
 let router = new Router();
 
 router.get('/', function *(next) {
-    this.body = yield loadBalancer.execute({hello: "world"});
+    this.body = yield loadBalancer.execute();
+    yield next;
+});
+
+router.get('/:digits', function *(next) {
+    this.body = yield loadBalancer.execute({digits: this.params.digits});
     yield next;
 });
 
