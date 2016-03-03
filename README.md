@@ -1,5 +1,9 @@
 # dezsys10-loadbalancing
 
+## Vorraussetzungen
+- NodeJS v5.7.0
+- gcc, make
+
 ## Installing
 Run `npm install` to download the needed dependencies.  
 If the native addon cannot be built, run `npm install --ignore-scripts`
