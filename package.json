@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Load Balancing",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preinstall": "./build-deps.sh",
+    "install": "node-gyp rebuild"
   },
   "repository": {
     "type": "git",
@@ -18,15 +19,13 @@
   "homepage": "https://github.com/ReneHollander/dezsys10-loadbalancing#readme",
   "dependencies": {
     "bindings": "^1.2.1",
+    "debug": "^2.2.0",
     "koa": "^1.1.2",
     "koa-router": "^5.4.0",
     "minimist": "^1.2.0",
     "nan": "^2.2.0",
+    "node-uuid": "^1.4.7",
     "socket.io": "^1.4.5",
     "socket.io-client": "^1.4.5"
-  },
-  "scripts": {
-    "preinstall": "./build-deps.sh",
-    "install": "node-gyp rebuild"
   }
 }

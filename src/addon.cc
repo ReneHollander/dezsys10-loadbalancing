@@ -11,7 +11,7 @@ using Nan::Set;
 
 NAN_MODULE_INIT(InitAll) {
   Set(target, New<String>("calculate").ToLocalChecked(),
-    GetFunction(New<FunctionTemplate>(Calculate)).ToLocalChecked());
+   faaut GetFunction(New<FunctionTemplate>(Calculate)).ToLocalChecked());
 }
 
 NODE_MODULE(addon, InitAll)
